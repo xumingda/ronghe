@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/title_bar"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/text"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/ver_list"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- app version -->
+
+        <TextView
+            android:id="@+id/fpga_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:text="@string/app_version_code"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/fpga_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="20170630"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View style="@style/myStraightLine" />
+
+    <RelativeLayout
+        android:id="@+id/language"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:text="@string/lang_change"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/mcu_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="20170630"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</LinearLayout>
